@@ -83,7 +83,19 @@ h3 {
 }
 
 main > section.regular-width {
-  margin-top: 100px;
+  margin-top: 70px;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-image img {
+  width: 60%;
+}
+.text-image .text {
+  width: 35%;
 }
 
 .btn {
@@ -130,18 +142,10 @@ header nav ul li a:hover {
 #about-us {
   margin-top: 30px;
 }
-#about-us .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#about-us .content img {
-  width: 60%;
-}
-#about-us .content .text {
-  width: 35%;
-}
 
+#our-services h2 {
+  text-align: center;
+}
 #our-services .cards {
   display: flex;
   align-items: center;
@@ -150,7 +154,7 @@ header nav ul li a:hover {
 #our-services .cards .card {
   width: 250px;
   padding: 50px 30px;
-  height: 300px;
+  height: 320px;
   text-align: center;
   margin: 20px;
   border-radius: 20px;
@@ -176,10 +180,10 @@ header nav ul li a:hover {
   color: #fdb40b;
   transition-duration: 0.2s;
   font-weight: bold;
-  border-bottom: 1px solid rgba(253, 180, 11, 0);
+  border-bottom: 2px solid rgba(253, 180, 11, 0);
 }
 #our-services .cards .card a:hover p.link {
-  border-bottom: 1px solid #fdb40b;
+  border-bottom: 2px solid #fdb40b;
 }
 
 /*# sourceMappingURL=styles.css.map */
