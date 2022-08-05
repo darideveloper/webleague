@@ -1,0 +1,41 @@
+#our-work
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .text
+        width: calc(100% - 400px)
+
+    .cards
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        width: 400px
+
+        .card
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            border-radius: 100px
+            width: 200px
+            height: 200px
+
+            &:nth-child(1), &:nth-child(3)
+                margin-top: -30px
+
+            &.circle
+                border: 2px dashed $color-a
+                box-shadow: 5px 5px 20px -7px #00000076
+
+            img
+                width: 40px
+                height: 40px
+
+            h3
+                color: $color-a
+                margin: 0
+                margin: 10px 0
+
+            p
+                margin: 0

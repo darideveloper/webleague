@@ -186,4 +186,62 @@ header nav ul li a:hover {
   border-bottom: 2px solid #fdb40b;
 }
 
+#our-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#our-work .text {
+  width: calc(100% - 400px);
+}
+#our-work .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+}
+#our-work .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+#our-work .cards .card:nth-child(1), #our-work .cards .card:nth-child(3) {
+  margin-top: -30px;
+}
+#our-work .cards .card.circle {
+  border: 2px dashed #fdb40b;
+  box-shadow: 5px 5px 20px -7px rgba(0, 0, 0, 0.462745098);
+}
+#our-work .cards .card img {
+  width: 40px;
+  height: 40px;
+}
+#our-work .cards .card h3 {
+  color: #fdb40b;
+  margin: 0;
+  margin: 10px 0;
+}
+#our-work .cards .card p {
+  margin: 0;
+}
+
+#what-you-gain li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+#what-you-gain li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+#what-you-gain li p, #what-you-gain li a {
+  margin: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
