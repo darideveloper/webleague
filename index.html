@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -222,6 +223,30 @@
             </div>
         </section>
 
+        <section class="testimonials regular-width" id="testimonials">
+            <h2>Testimonials</h2>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <img src="./imgs/testimonial1.png" alt="testimonial screenshot 1">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./imgs/testimonial2.png" alt="testimonial screenshot 2">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./imgs/testimonial3.png" alt="testimonial screenshot 3">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./imgs/testimonial4.png" alt="testimonial screenshot 4">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="./imgs/testimonial5.png" alt="testimonial screenshot 5">
+                          </li>
+                      </ul>
+                </div>
+            </section>
+        </section>
 
     </main>
 
@@ -229,6 +254,12 @@
         <section class="widgets"></section>
         <section class="bottom"></section>
     </footer>
+
+    <script src="./code/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide' );
+        splide.mount();
+    </script>
 
     <!-- Aos imports -->
     <!-- <script type="text/javascript" src="code/aos.js"></script> -->

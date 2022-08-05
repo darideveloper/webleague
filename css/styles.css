@@ -243,5 +243,29 @@ header nav ul li a:hover {
 #what-you-gain li p, #what-you-gain li a {
   margin: 0;
 }
+#what-you-gain li a {
+  color: #fdb40b;
+}
+#what-you-gain li a:hover {
+  color: #01193c;
+}
+
+#testimonials h2 {
+  text-align: center;
+}
+#testimonials .splide {
+  width: 100%;
+  height: 400px;
+}
+#testimonials .splide .splide__slide {
+  background-color: rgba(165, 159, 167, 0.1);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#testimonials .splide .splide__slide img {
+  height: 400px;
+  width: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
