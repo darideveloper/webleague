@@ -1,0 +1,40 @@
+#our-services
+    .cards
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .card
+            width: 250px
+            padding: 50px 30px
+            height: 300px
+            text-align: center
+            margin: 20px
+            border-radius: 20px
+            transition-duration: 0.5s
+
+            &:hover
+                box-shadow: 5px 5px 19px -3px #00000081
+
+            a
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                flex-direction: column
+
+                img
+                    width: 50px
+                    height: 50px
+
+                p
+                    color: $color-b
+
+                p.link
+                    color: $color-a
+                    transition-duration: 0.2s
+                    font-weight: bold
+                    border-bottom: 1px solid rgba($color-a, 0)
+
+                &:hover
+                    p.link
+                        border-bottom: 1px solid rgba($color-a, 1)

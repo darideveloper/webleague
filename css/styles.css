@@ -66,6 +66,10 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 30px;
+}
+
 *:focus {
   outline: none;
 }
@@ -76,6 +80,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+}
+
+main > section.regular-width {
+  margin-top: 100px;
 }
 
 .btn {
@@ -120,7 +128,7 @@ header nav ul li a:hover {
 }
 
 #about-us {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #about-us .content {
   display: flex;
@@ -132,6 +140,46 @@ header nav ul li a:hover {
 }
 #about-us .content .text {
   width: 35%;
+}
+
+#our-services .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#our-services .cards .card {
+  width: 250px;
+  padding: 50px 30px;
+  height: 300px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+#our-services .cards .card:hover {
+  box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
+}
+#our-services .cards .card a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#our-services .cards .card a img {
+  width: 50px;
+  height: 50px;
+}
+#our-services .cards .card a p {
+  color: #01193c;
+}
+#our-services .cards .card a p.link {
+  color: #fdb40b;
+  transition-duration: 0.2s;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(253, 180, 11, 0);
+}
+#our-services .cards .card a:hover p.link {
+  border-bottom: 1px solid #fdb40b;
 }
 
 /*# sourceMappingURL=styles.css.map */
