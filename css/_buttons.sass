@@ -1,8 +1,17 @@
 .btn
     display: inline-block
+    transition-duration: 0.5s
 
-    // &.cta
+    &.cta
+        padding: 10px 30px
+        background-color: $color-a
+        color: $color-d
+        border-radius: 50px
+        font-weight: bold
+        box-shadow: 5px 2px 15px -1px rgba($color-a,0.35)
 
-    //     &:hover
+        &:hover
+            box-shadow: 5px 2px 15px -1px rgba($color-a,1)
+            transform: translateY(-5px)
 
-    //     &:active
+        &:active

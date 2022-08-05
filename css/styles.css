@@ -7,7 +7,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  color: #a59fa7;
+  background-color: #ffffff;
   font-family: "regular-font", sans-serif;
 }
 
@@ -38,11 +39,11 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #fdb40b;
 }
 
 .regular-width {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -53,7 +54,7 @@ a {
 
 h1, h2, h3, h4, h5, h6, .title {
   font-family: "title-font", cursive;
-  color: #fff;
+  color: #01193c;
 }
 
 *:focus {
@@ -70,6 +71,43 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .btn {
   display: inline-block;
+  transition-duration: 0.5s;
+}
+.btn.cta {
+  padding: 10px 30px;
+  background-color: #fdb40b;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 5px 2px 15px -1px rgba(253, 180, 11, 0.35);
+}
+.btn.cta:hover {
+  box-shadow: 5px 2px 15px -1px #fdb40b;
+  transform: translateY(-5px);
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+header nav ul li a {
+  padding: 10px;
+  color: #a59fa7;
+  transition-duration: 0.5s;
+}
+header nav ul li a:hover {
+  color: #fdb40b;
 }
 
 /*# sourceMappingURL=styles.css.map */
