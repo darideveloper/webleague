@@ -9,7 +9,7 @@ body {
   padding: 0;
   color: #a59fa7;
   background-color: #ffffff;
-  font-family: "regular-font", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .wrapper-img {
@@ -53,8 +53,17 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-  font-family: "title-font", cursive;
+  font-family: "Squada One", cursive;
   color: #01193c;
+}
+
+h1 {
+  color: #fdb40b;
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 *:focus {
@@ -108,6 +117,21 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #fdb40b;
+}
+
+#about-us {
+  margin-top: 50px;
+}
+#about-us .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about-us .content img {
+  width: 60%;
+}
+#about-us .content .text {
+  width: 35%;
 }
 
 /*# sourceMappingURL=styles.css.map */
