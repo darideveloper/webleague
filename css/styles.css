@@ -114,6 +114,7 @@ main > section.regular-width {
   box-shadow: 5px 2px 15px -1px #fdb40b;
   transform: translateY(-5px);
 }
+
 header {
   width: 100%;
   display: flex;
@@ -328,6 +329,44 @@ header nav ul li a:hover {
 #package .cards .card a .price-cta {
   position: absolute;
   bottom: 20px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+#contact form input, #contact form textarea {
+  border: none;
+  background: none;
+  border-radius: 20px;
+  box-shadow: 5px 4px 12px -2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 30px;
+  width: calc(100% - 60px);
+  box-sizing: content-box;
+  margin-top: 20px;
+  border: 2px solid rgba(253, 180, 11, 0);
+  transition-duration: 0.5s;
+}
+#contact form input:focus, #contact form textarea:focus {
+  outline: none;
+  border: 2px solid #fdb40b;
+}
+#contact form .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact form .name input {
+  width: calc(48% - 60px);
+}
+#contact form input[type=submit] {
+  width: 120px;
+  background-color: #fdb40b;
+}
+#contact form textarea {
+  height: 150px;
+  resize: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

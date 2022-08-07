@@ -474,6 +474,26 @@
             </section>
         </section>
 
+        <section class="contact" id="contact">
+            <div class="content text-image regular-width">
+                <img src="./imgs/contact.svg" alt="contact image">
+                <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
+                    <h2>Get in Touch With Us</h2>
+                    <div class="name">
+                        <input type="text" name="first-name" id="first-name" placeholder="First name">
+                        <input type="text" name="last-name" id="last-name" placeholder="Last name">
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea name="details" id="details" placeholder="Comments"></textarea>
+                    <input type="submit" value="Submit" class="btn cta">
+    
+                    <input type="hidden" name="user" id="user" value="WebLeague">
+                    <input type="hidden" name="api_key" id="api_key" value="ox5Shdb4G5@i&vQj@m8LFNP5M5^cKu">
+                    <input type="hidden" name="redirect" id="redirect" value="http://localhost/projects/WebLeague/web/?thanks=true">
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
