@@ -1,0 +1,64 @@
+#package
+    h1, h2
+        text-align: center
+
+    h2
+        margin-top: 100px
+    
+    .cards
+        display: grid
+        justify-content: center
+
+        &.website
+            grid-template-columns: repeat(4, 300px)
+
+        &.branding
+            grid-template-columns: repeat(3, 350px)
+
+        &.seo
+            grid-template-columns: repeat(3, 300px)
+
+
+        .card
+            width: calc(100% - 60px)
+            padding: 50px 30px
+            height: auto
+            text-align: center
+            margin: 0
+            border-radius: 5px
+            border: 2px dashed rgba($color-a, 0)
+            transition-duration: 0.5s
+            position: relative
+            padding-bottom: 140px
+
+            &:hover
+                box-shadow: 5px 5px 19px -3px #00000081
+                border: 2px dashed $color-a
+
+            a
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                flex-direction: column
+
+                img
+                    width: 50px
+                    height: 50px
+
+                p
+                    color: $color-b
+
+                ul
+                    text-align: left
+                    color: $color-c
+
+                p.price
+                    font-size: 30px
+                    color: $color-a
+                    margin: 0
+
+                .price-cta
+                    position: absolute
+                    bottom: 20px
+
+

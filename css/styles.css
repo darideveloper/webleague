@@ -194,12 +194,12 @@ header nav ul li a:hover {
 #our-work .text {
   width: calc(100% - 400px);
 }
-#our-work .cards {
+#our-work .numbers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 400px;
 }
-#our-work .cards .card {
+#our-work .numbers .number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,23 +208,23 @@ header nav ul li a:hover {
   width: 200px;
   height: 200px;
 }
-#our-work .cards .card:nth-child(1), #our-work .cards .card:nth-child(3) {
+#our-work .numbers .number:nth-child(1), #our-work .numbers .number:nth-child(3) {
   margin-top: -30px;
 }
-#our-work .cards .card.circle {
+#our-work .numbers .number.circle {
   border: 2px dashed #fdb40b;
   box-shadow: 5px 5px 20px -7px rgba(0, 0, 0, 0.462745098);
 }
-#our-work .cards .card img {
+#our-work .numbers .number img {
   width: 40px;
   height: 40px;
 }
-#our-work .cards .card h3 {
+#our-work .numbers .number h3 {
   color: #fdb40b;
   margin: 0;
   margin: 10px 0;
 }
-#our-work .cards .card p {
+#our-work .numbers .number p {
   margin: 0;
 }
 
@@ -266,6 +266,68 @@ header nav ul li a:hover {
 #testimonials .splide .splide__slide img {
   height: 400px;
   width: auto;
+}
+
+#package h1, #package h2 {
+  text-align: center;
+}
+#package h2 {
+  margin-top: 100px;
+}
+#package .cards {
+  display: grid;
+  justify-content: center;
+}
+#package .cards.website {
+  grid-template-columns: repeat(4, 300px);
+}
+#package .cards.branding {
+  grid-template-columns: repeat(3, 350px);
+}
+#package .cards.seo {
+  grid-template-columns: repeat(3, 300px);
+}
+#package .cards .card {
+  width: calc(100% - 60px);
+  padding: 50px 30px;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  border-radius: 5px;
+  border: 2px dashed rgba(253, 180, 11, 0);
+  transition-duration: 0.5s;
+  position: relative;
+  padding-bottom: 140px;
+}
+#package .cards .card:hover {
+  box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
+  border: 2px dashed #fdb40b;
+}
+#package .cards .card a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#package .cards .card a img {
+  width: 50px;
+  height: 50px;
+}
+#package .cards .card a p {
+  color: #01193c;
+}
+#package .cards .card a ul {
+  text-align: left;
+  color: #a59fa7;
+}
+#package .cards .card a p.price {
+  font-size: 30px;
+  color: #fdb40b;
+  margin: 0;
+}
+#package .cards .card a .price-cta {
+  position: absolute;
+  bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
