@@ -369,4 +369,45 @@ header nav ul li a:hover {
   resize: none;
 }
 
+footer {
+  background-color: #01193c;
+  width: 100%;
+  color: #fdb40b;
+}
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .content small {
+  line-height: 35px;
+  margin: 0;
+}
+footer .content .icons {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .content .icons a {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+footer .content .icons a:hover {
+  opacity: 0.7;
+}
+footer .content .icons a img {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
