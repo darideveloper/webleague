@@ -476,7 +476,7 @@ header.regular-width nav ul li a:hover {
   height: auto;
   text-align: center;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 2px dashed rgba(148, 217, 179, 0);
   transition-duration: 0.5s;
   position: relative;
@@ -519,6 +519,21 @@ header.regular-width nav ul li a:hover {
 }
 @media screen and (max-width: 1000px) {
   #package .cards.website {
+    grid-template-columns: repeat(2, auto);
+  }
+  #package .cards.branding {
+    grid-template-columns: repeat(2, auto);
+  }
+  #package .cards.seo {
+    grid-template-columns: repeat(2, auto);
+  }
+  #package .cards .card {
+    max-width: 300px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #package .cards.website {
     grid-template-columns: repeat(1, auto);
   }
   #package .cards.branding {
@@ -526,10 +541,6 @@ header.regular-width nav ul li a:hover {
   }
   #package .cards.seo {
     grid-template-columns: repeat(1, auto);
-  }
-  #package .cards .card {
-    max-width: 300px;
-    margin-top: 40px;
   }
   #package .cards .card:nth-child(even) {
     box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);

@@ -25,7 +25,7 @@
             height: auto
             text-align: center
             margin: 0
-            border-radius: 5px
+            border-radius: 15px
             border: 2px dashed rgba($color-a, 0)
             transition-duration: 0.5s
             position: relative
@@ -67,6 +67,20 @@
 
         @media screen and (max-width: 1000px)
             &.website
+                grid-template-columns: repeat(2,auto)
+
+            &.branding
+                grid-template-columns: repeat(2,auto)
+
+            &.seo
+                grid-template-columns: repeat(2, auto)
+
+            .card
+                max-width: 300px
+                margin-top: 40px
+
+        @media screen and (max-width: 700px)
+            &.website
                 grid-template-columns: repeat(1,auto)
 
             &.branding
@@ -75,9 +89,5 @@
             &.seo
                 grid-template-columns: repeat(1, auto)
 
-            .card
-                max-width: 300px
-                margin-top: 40px
-
-                &:nth-child(even)
-                    box-shadow: 5px 5px 19px -3px #00000081
+            .card:nth-child(even)
+                box-shadow: 5px 5px 19px -3px #00000081
