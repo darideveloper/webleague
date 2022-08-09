@@ -47,6 +47,12 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .regular-width {
+    margin: 0 50px;
+    width: 100%;
+  }
+}
 
 .full-width {
   max-width: 100%;
@@ -91,12 +97,32 @@ main > section.regular-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .text-image img {
   width: 60%;
 }
 .text-image .text {
   width: 35%;
+}
+@media screen and (max-width: 1000px) {
+  .text-image img {
+    width: 70%;
+  }
+  .text-image .text {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .text-image {
+    flex-direction: column;
+  }
+  .text-image img {
+    width: 100%;
+  }
+  .text-image .text {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -116,7 +142,7 @@ main > section.regular-width {
   transform: translateY(-5px);
 }
 
-header {
+header.regular-width {
   width: 100%;
   display: flex;
   align-items: center;
@@ -124,50 +150,51 @@ header {
   padding-top: 20px;
   position: relative;
 }
-header button {
+header.regular-width button {
   display: none;
 }
-header nav ul {
+header.regular-width nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-header nav ul li {
+header.regular-width nav ul li {
   list-style: none;
   margin-left: 10px;
 }
-header nav ul li a {
+header.regular-width nav ul li a {
   padding: 10px;
   color: #798289;
   transition-duration: 0.5s;
   display: inline-block;
 }
-header nav ul li a:hover {
+header.regular-width nav ul li a:hover {
   color: #fbc14e;
 }
 @media screen and (max-width: 1200px) {
-  header {
+  header.regular-width {
     flex-direction: column;
+    margin: 0;
   }
 }
 @media screen and (max-width: 1000px) {
-  header {
+  header.regular-width {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
   }
-  header button {
+  header.regular-width button {
     display: inline-block;
     width: 60px;
     height: 60px;
     background: none;
     border: none;
   }
-  header button img {
+  header.regular-width button img {
     width: 100%;
     height: auto;
   }
-  header nav {
+  header.regular-width nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -179,19 +206,19 @@ header nav ul li a:hover {
     background-color: #ffffff;
     box-shadow: 5px 2px 15px -1px rgba(0, 0, 0, 0.35);
   }
-  header nav.collapsed {
+  header.regular-width nav.collapsed {
     right: -250px;
   }
-  header nav ul {
+  header.regular-width nav ul {
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  header nav ul li {
+  header.regular-width nav ul li {
     margin: 0;
     padding: 0;
   }
-  header nav ul li a {
+  header.regular-width nav ul li a {
     padding: 20px 0;
     font-size: 20px;
   }

@@ -47,6 +47,10 @@ a
     max-width: 1200px
     margin: 0 auto
 
+    @media screen and (max-width: 1200px) 
+        margin: 0 50px
+        width: 100%
+
 .full-width
     max-width: 100%
     margin: 0 auto
@@ -82,10 +86,26 @@ main > section.regular-width
     display: flex
     align-items: center
     justify-content: space-between
+    position: relative
 
     img
         width: 60%
 
     .text
         width:35%
-        
+
+    @media screen and (max-width: 1000px)
+        img
+            width: 70%
+
+        .text
+            width: 25%
+
+    @media screen and (max-width: 650px)
+        flex-direction: column
+
+        img
+            width: 100%
+
+        .text
+            width: 100%
