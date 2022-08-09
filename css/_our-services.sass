@@ -41,3 +41,46 @@
                 &:hover
                     p.link
                         border-bottom: 2px solid rgba($color-a, 1)
+
+        @media screen and (max-width: 750px)
+            flex-direction: column
+
+            .card
+                width: 80%
+                height: auto
+                padding: 20px 40px
+
+                &:nth-child(2)
+                    box-shadow: 5px 5px 19px -3px #00000081
+
+                &:hover
+                    box-shadow: none
+
+                a
+                    flex-direction: row
+                    justify-content: space-between
+
+                    img
+                        width: 100px
+                        height: auto
+
+                    .text
+                        width: calc(100% - 120px)
+
+                    &:hover
+                        p.link
+                            border: none
+        
+        @media screen and (max-width: 500px)
+            .card
+                width: 95%
+
+        @media screen and (max-width: 400px)
+            .card
+                width: auto
+
+                a
+                    flex-direction: column
+
+                    .text
+                        width: 100%

@@ -113,7 +113,7 @@ main > section.regular-width {
     width: 25%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .text-image {
     flex-direction: column;
   }
@@ -269,6 +269,52 @@ header.regular-width nav ul li a:hover {
 }
 #our-services .cards .card a:hover p.link {
   border-bottom: 2px solid #fbc14e;
+}
+@media screen and (max-width: 750px) {
+  #our-services .cards {
+    flex-direction: column;
+  }
+  #our-services .cards .card {
+    width: 80%;
+    height: auto;
+    padding: 20px 40px;
+  }
+  #our-services .cards .card:nth-child(2) {
+    box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
+  }
+  #our-services .cards .card:hover {
+    box-shadow: none;
+  }
+  #our-services .cards .card a {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #our-services .cards .card a img {
+    width: 100px;
+    height: auto;
+  }
+  #our-services .cards .card a .text {
+    width: calc(100% - 120px);
+  }
+  #our-services .cards .card a:hover p.link {
+    border: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #our-services .cards .card {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #our-services .cards .card {
+    width: auto;
+  }
+  #our-services .cards .card a {
+    flex-direction: column;
+  }
+  #our-services .cards .card a .text {
+    width: 100%;
+  }
 }
 
 #our-work {
