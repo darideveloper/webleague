@@ -40,7 +40,7 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #fbc14e;
+  color: #94d9b3;
 }
 
 .regular-width {
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 h1 {
-  color: #fbc14e;
+  color: #94d9b3;
   font-size: 55px;
 }
 
@@ -131,14 +131,14 @@ main > section.regular-width {
 }
 .btn.cta {
   padding: 10px 30px;
-  background-color: #fbc14e;
+  background-color: #94d9b3;
   color: #ffffff;
   border-radius: 50px;
   font-weight: bold;
-  box-shadow: 5px 2px 15px -1px rgba(251, 193, 78, 0.35);
+  box-shadow: 5px 2px 15px -1px rgba(148, 217, 179, 0.35);
 }
 .btn.cta:hover {
-  box-shadow: 5px 2px 15px -1px #fbc14e;
+  box-shadow: 5px 2px 15px -1px #94d9b3;
   transform: translateY(-5px);
 }
 
@@ -169,7 +169,7 @@ header.regular-width nav ul li a {
   display: inline-block;
 }
 header.regular-width nav ul li a:hover {
-  color: #fbc14e;
+  color: #94d9b3;
 }
 @media screen and (max-width: 1200px) {
   header.regular-width {
@@ -182,7 +182,7 @@ header.regular-width nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
   }
   header.regular-width button {
     display: inline-block;
@@ -263,13 +263,13 @@ header.regular-width nav ul li a:hover {
   color: #01193c;
 }
 #our-services .cards .card a p.link {
-  color: #fbc14e;
+  color: #94d9b3;
   transition-duration: 0.2s;
   font-weight: bold;
-  border-bottom: 2px solid rgba(251, 193, 78, 0);
+  border-bottom: 2px solid rgba(148, 217, 179, 0);
 }
 #our-services .cards .card a:hover p.link {
-  border-bottom: 2px solid #fbc14e;
+  border-bottom: 2px solid #94d9b3;
 }
 @media screen and (max-width: 750px) {
   #our-services .cards {
@@ -344,7 +344,7 @@ header.regular-width nav ul li a:hover {
   margin-top: -30px;
 }
 #our-work .numbers .number.circle {
-  border: 2px dashed #fbc14e;
+  border: 2px dashed #94d9b3;
   box-shadow: 5px 5px 20px -7px rgba(0, 0, 0, 0.462745098);
 }
 #our-work .numbers .number img {
@@ -352,7 +352,7 @@ header.regular-width nav ul li a:hover {
   height: 40px;
 }
 #our-work .numbers .number h3 {
-  color: #fbc14e;
+  color: #94d9b3;
   margin: 0;
   margin: 10px 0;
 }
@@ -400,7 +400,7 @@ header.regular-width nav ul li a:hover {
   margin: 0;
 }
 #what-you-gain li a {
-  color: #fbc14e;
+  color: #94d9b3;
 }
 #what-you-gain li a:hover {
   color: #01193c;
@@ -477,14 +477,14 @@ header.regular-width nav ul li a:hover {
   text-align: center;
   margin: 0;
   border-radius: 5px;
-  border: 2px dashed rgba(251, 193, 78, 0);
+  border: 2px dashed rgba(148, 217, 179, 0);
   transition-duration: 0.5s;
   position: relative;
   padding-bottom: 140px;
 }
 #package .cards .card:hover {
   box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
-  border: 2px dashed #fbc14e;
+  border: 2px dashed #94d9b3;
 }
 #package .cards .card a {
   display: flex;
@@ -505,7 +505,7 @@ header.regular-width nav ul li a:hover {
 }
 #package .cards .card a p.price {
   font-size: 30px;
-  color: #fbc14e;
+  color: #94d9b3;
   margin: 0;
 }
 #package .cards .card a .price-cta {
@@ -550,12 +550,12 @@ header.regular-width nav ul li a:hover {
   width: calc(100% - 60px);
   box-sizing: content-box;
   margin-top: 20px;
-  border: 2px solid rgba(251, 193, 78, 0);
+  border: 2px solid rgba(148, 217, 179, 0);
   transition-duration: 0.5s;
 }
 #contact form input:focus, #contact form textarea:focus {
   outline: none;
-  border: 2px solid #fbc14e;
+  border: 2px solid #94d9b3;
 }
 #contact form .name {
   display: flex;
@@ -567,7 +567,7 @@ header.regular-width nav ul li a:hover {
 }
 #contact form input[type=submit] {
   width: 120px;
-  background-color: #fbc14e;
+  background-color: #94d9b3;
 }
 #contact form textarea {
   height: 150px;
@@ -603,7 +603,7 @@ header.regular-width nav ul li a:hover {
 
 footer {
   background-color: #01193c;
-  color: #fbc14e;
+  color: #94d9b3;
   margin-top: 30px;
 }
 footer .content {
