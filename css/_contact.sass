@@ -37,3 +37,26 @@
         textarea
             height: 150px
             resize: none
+
+    @media screen and (max-width: 1000px)
+        img
+            width: 50%
+
+        .text
+            width: 50%
+
+    @media screen and (max-width: 700px)
+        flex-direction: column
+
+        img
+            width: 100%
+
+        .text
+            width: 100%
+
+    @media screen and (max-width: 500px)
+        form .name
+            flex-direction: column
+
+            input
+                width: calc(100% - 60px)

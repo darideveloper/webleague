@@ -572,6 +572,33 @@ header.regular-width nav ul li a:hover {
   height: 150px;
   resize: none;
 }
+@media screen and (max-width: 1000px) {
+  #contact img {
+    width: 50%;
+  }
+  #contact .text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #contact {
+    flex-direction: column;
+  }
+  #contact img {
+    width: 100%;
+  }
+  #contact .text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact form .name {
+    flex-direction: column;
+  }
+  #contact form .name input {
+    width: calc(100% - 60px);
+  }
+}
 
 footer {
   background-color: #01193c;
