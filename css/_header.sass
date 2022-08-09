@@ -26,7 +26,7 @@ header.regular-width
                     transition-duration: 0.5s
                     display: inline-block
 
-                    &:hover
+                    &:hover:not(.btn)
                         color: $color-a
 
     @media screen and (max-width: 1200px)
@@ -59,7 +59,7 @@ header.regular-width
             padding-top: 30px
             height: 200vh
             transition-duration: 0.5s
-            z-index: 1
+            z-index: 2
             background-color: $color-d
             box-shadow: 5px 2px 15px -1px rgba(black,0.35)
 

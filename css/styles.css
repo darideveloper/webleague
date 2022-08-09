@@ -168,7 +168,7 @@ header.regular-width nav ul li a {
   transition-duration: 0.5s;
   display: inline-block;
 }
-header.regular-width nav ul li a:hover {
+header.regular-width nav ul li a:hover:not(.btn) {
   color: #94d9b3;
 }
 @media screen and (max-width: 1200px) {
@@ -203,7 +203,7 @@ header.regular-width nav ul li a:hover {
     padding-top: 30px;
     height: 200vh;
     transition-duration: 0.5s;
-    z-index: 1;
+    z-index: 2;
     background-color: #ffffff;
     box-shadow: 5px 2px 15px -1px rgba(0, 0, 0, 0.35);
   }
@@ -613,8 +613,8 @@ header.regular-width nav ul li a:hover {
 }
 
 footer {
-  background-color: #01193c;
-  color: #94d9b3;
+  background-color: #94d9b3;
+  color: #ffffff;
   margin-top: 30px;
 }
 footer .content {
@@ -625,6 +625,10 @@ footer .content {
 footer .content small {
   line-height: 35px;
   margin: 0;
+  font-weight: bold;
+}
+footer .content small a {
+  color: #ffffff;
 }
 footer .content .icons {
   height: 30px;
@@ -641,7 +645,7 @@ footer .content .icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.5;
+  opacity: 1;
 }
 footer .content .icons a:hover {
   opacity: 0.7;
