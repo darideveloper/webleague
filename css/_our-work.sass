@@ -39,3 +39,24 @@
 
             p
                 margin: 0
+
+    @media screen and (max-width: 700px)
+        flex-direction: column
+
+        .text
+            width: 100%
+            text-align: center
+
+        .numbers
+            margin-top: 30px
+
+    @media screen and (max-width: 450px)
+        .numbers
+            width: 320px
+
+            .number
+                width: 160px
+                height: 160px
+
+                p
+                    font-size: 14px

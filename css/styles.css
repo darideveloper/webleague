@@ -358,6 +358,30 @@ header.regular-width nav ul li a:hover {
 #our-work .numbers .number p {
   margin: 0;
 }
+@media screen and (max-width: 700px) {
+  #our-work {
+    flex-direction: column;
+  }
+  #our-work .text {
+    width: 100%;
+    text-align: center;
+  }
+  #our-work .numbers {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #our-work .numbers {
+    width: 320px;
+  }
+  #our-work .numbers .number {
+    width: 160px;
+    height: 160px;
+  }
+  #our-work .numbers .number p {
+    font-size: 14px;
+  }
+}
 
 #what-you-gain li {
   list-style: none;
