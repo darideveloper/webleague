@@ -4,6 +4,10 @@ header
     align-items: center
     justify-content: space-between
     padding-top: 20px
+    position: relative
+
+    button
+        display: none
 
     nav
         ul
@@ -19,6 +23,56 @@ header
                     padding: 10px
                     color: $color-c
                     transition-duration: 0.5s
+                    display: inline-block
 
                     &:hover
                         color: $color-a
+
+    @media screen and (max-width: 1200px)
+        flex-direction: column
+
+    @media screen and (max-width: 1000px)
+        flex-direction: row
+        justify-content: space-between
+        padding: 0 50px
+
+        button
+            display: inline-block
+            width: 60px
+            height: 60px
+            background: none
+            border: none
+
+            img
+                width: 100%
+                height: auto
+
+
+        nav 
+            position: fixed
+            top: 0
+            right: 0
+            padding: 0 50px
+            padding-top: 30px
+            height: 200vh
+            transition-duration: 0.5s
+            z-index: 1
+            background-color: $color-d
+            box-shadow: 5px 2px 15px -1px rgba(black,0.35)
+
+            &.collapsed
+                right: -250px
+
+
+            ul
+                flex-direction: column
+                margin: 0
+                padding: 0
+
+                li
+                    margin: 0 
+                    padding: 0
+
+                    a
+                        padding: 20px 0
+                        font-size: 20px

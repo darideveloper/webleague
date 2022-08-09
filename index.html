@@ -23,8 +23,16 @@
 
     <header class="regular-width">
         <img src="imgs/logo.png" alt="company logo" class="logo">
-        <nav>
+        <button class="menu">
+            <img src="./imgs/btn-menu.svg" alt="menu icon">
+        </button>
+        <nav class="collapsed">
             <ul>
+                <li>
+                    <button class="close">
+                        <img src="./imgs/btn-close.svg" alt="close icon">
+                    </button>
+                </li>
                 <li>
                     <a href="#about-us">
                         About us
@@ -70,7 +78,7 @@
     </header>
 
     <main>
-        <section class="about-us regular-width" id="about-us">
+        <section class="about-us regular-width hide" id="about-us">
             <div class="content text-image">
                 <div class="text">
                     <h1>WebLeague</h1>
@@ -86,7 +94,7 @@
             </div>
         </section>
 
-        <section class="our-services regular-width" id="our-services">
+        <section class="our-services regular-width hide" id="our-services">
             <h2>Our services</h2>
             <div class="cards">
                 <article class="card">
@@ -129,7 +137,7 @@
             </div>
         </section>
 
-        <section class="why-hire-us regular-width" id="why-hire-us">
+        <section class="why-hire-us regular-width hide" id="why-hire-us">
             <div class="content text-image">
                 <img src="./imgs/why-hire-us.svg" alt="why hire us image">
                 <div class="text">
@@ -147,7 +155,7 @@
             </div>
         </section>
 
-        <section class="our-work regular-width" id="our-work">
+        <section class="our-work regular-width hide" id="our-work">
             <div class="text">
                 <h2>Over 500+ Completed Work and Still Counting</h2>
                 <p>Our active years of experience add up to these amazing numbers:</p>
@@ -176,7 +184,7 @@
             </div>
         </section>
 
-        <section class="what-you-gain regular-width" id="what-you-gain">
+        <section class="what-you-gain regular-width hide" id="what-you-gain">
             <div class="content text-image">
                 <div class="text">
                     <h2>What you gain?</h2>
@@ -205,7 +213,7 @@
             </div>
         </section>
 
-        <section class="testimonials regular-width" id="testimonials">
+        <section class="testimonials regular-width hide" id="testimonials">
             <h2>Testimonials</h2>
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
@@ -230,7 +238,7 @@
             </section>
         </section>
 
-        <section class="package regular-width" id="package">
+        <section class="package regular-width hide" id="package">
             <h1>Choose your package</h1>
             <h2>Website design</h2>
             <section class="cards website">
@@ -456,7 +464,7 @@
             </section>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact hide" id="contact">
             <div class="content text-image regular-width">
                 <img src="./imgs/contact.svg" alt="contact image">
                 <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
@@ -478,7 +486,7 @@
 
     </main>
 
-    <footer>
+    <footer class="hide">
         <div class="content regular-width">
             <div class="icons">
                 <a href="https://api.whatsapp.com/send?phone=972549808011">
@@ -508,5 +516,6 @@
     <!-- Alerts imports -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
     <script src="./code/alerts.js"></script>
+    <script src="./code/header.js"></script>
 </body>
 </html>

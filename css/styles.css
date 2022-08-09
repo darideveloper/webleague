@@ -7,9 +7,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #a59fa7;
+  color: #798289;
   background-color: #ffffff;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper-img {
@@ -39,7 +40,7 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #fdb40b;
+  color: #fbc14e;
 }
 
 .regular-width {
@@ -58,7 +59,7 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 h1 {
-  color: #fdb40b;
+  color: #fbc14e;
   font-size: 55px;
 }
 
@@ -104,14 +105,14 @@ main > section.regular-width {
 }
 .btn.cta {
   padding: 10px 30px;
-  background-color: #fdb40b;
+  background-color: #fbc14e;
   color: #ffffff;
   border-radius: 50px;
   font-weight: bold;
-  box-shadow: 5px 2px 15px -1px rgba(253, 180, 11, 0.35);
+  box-shadow: 5px 2px 15px -1px rgba(251, 193, 78, 0.35);
 }
 .btn.cta:hover {
-  box-shadow: 5px 2px 15px -1px #fdb40b;
+  box-shadow: 5px 2px 15px -1px #fbc14e;
   transform: translateY(-5px);
 }
 
@@ -121,6 +122,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  position: relative;
+}
+header button {
+  display: none;
 }
 header nav ul {
   display: flex;
@@ -133,11 +138,63 @@ header nav ul li {
 }
 header nav ul li a {
   padding: 10px;
-  color: #a59fa7;
+  color: #798289;
   transition-duration: 0.5s;
+  display: inline-block;
 }
 header nav ul li a:hover {
-  color: #fdb40b;
+  color: #fbc14e;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  header button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: none;
+  }
+  header button img {
+    width: 100%;
+    height: auto;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 50px;
+    padding-top: 30px;
+    height: 200vh;
+    transition-duration: 0.5s;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 5px 2px 15px -1px rgba(0, 0, 0, 0.35);
+  }
+  header nav.collapsed {
+    right: -250px;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li a {
+    padding: 20px 0;
+    font-size: 20px;
+  }
 }
 
 #about-us {
@@ -178,13 +235,13 @@ header nav ul li a:hover {
   color: #01193c;
 }
 #our-services .cards .card a p.link {
-  color: #fdb40b;
+  color: #fbc14e;
   transition-duration: 0.2s;
   font-weight: bold;
-  border-bottom: 2px solid rgba(253, 180, 11, 0);
+  border-bottom: 2px solid rgba(251, 193, 78, 0);
 }
 #our-services .cards .card a:hover p.link {
-  border-bottom: 2px solid #fdb40b;
+  border-bottom: 2px solid #fbc14e;
 }
 
 #our-work {
@@ -213,7 +270,7 @@ header nav ul li a:hover {
   margin-top: -30px;
 }
 #our-work .numbers .number.circle {
-  border: 2px dashed #fdb40b;
+  border: 2px dashed #fbc14e;
   box-shadow: 5px 5px 20px -7px rgba(0, 0, 0, 0.462745098);
 }
 #our-work .numbers .number img {
@@ -221,7 +278,7 @@ header nav ul li a:hover {
   height: 40px;
 }
 #our-work .numbers .number h3 {
-  color: #fdb40b;
+  color: #fbc14e;
   margin: 0;
   margin: 10px 0;
 }
@@ -245,7 +302,7 @@ header nav ul li a:hover {
   margin: 0;
 }
 #what-you-gain li a {
-  color: #fdb40b;
+  color: #fbc14e;
 }
 #what-you-gain li a:hover {
   color: #01193c;
@@ -259,7 +316,7 @@ header nav ul li a:hover {
   height: 400px;
 }
 #testimonials .splide .splide__slide {
-  background-color: rgba(165, 159, 167, 0.1);
+  background-color: rgba(121, 130, 137, 0.1);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -295,14 +352,14 @@ header nav ul li a:hover {
   text-align: center;
   margin: 0;
   border-radius: 5px;
-  border: 2px dashed rgba(253, 180, 11, 0);
+  border: 2px dashed rgba(251, 193, 78, 0);
   transition-duration: 0.5s;
   position: relative;
   padding-bottom: 140px;
 }
 #package .cards .card:hover {
   box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
-  border: 2px dashed #fdb40b;
+  border: 2px dashed #fbc14e;
 }
 #package .cards .card a {
   display: flex;
@@ -319,11 +376,11 @@ header nav ul li a:hover {
 }
 #package .cards .card a ul {
   text-align: left;
-  color: #a59fa7;
+  color: #798289;
 }
 #package .cards .card a p.price {
   font-size: 30px;
-  color: #fdb40b;
+  color: #fbc14e;
   margin: 0;
 }
 #package .cards .card a .price-cta {
@@ -345,12 +402,12 @@ header nav ul li a:hover {
   width: calc(100% - 60px);
   box-sizing: content-box;
   margin-top: 20px;
-  border: 2px solid rgba(253, 180, 11, 0);
+  border: 2px solid rgba(251, 193, 78, 0);
   transition-duration: 0.5s;
 }
 #contact form input:focus, #contact form textarea:focus {
   outline: none;
-  border: 2px solid #fdb40b;
+  border: 2px solid #fbc14e;
 }
 #contact form .name {
   display: flex;
@@ -362,7 +419,7 @@ header nav ul li a:hover {
 }
 #contact form input[type=submit] {
   width: 120px;
-  background-color: #fdb40b;
+  background-color: #fbc14e;
 }
 #contact form textarea {
   height: 150px;
@@ -372,7 +429,7 @@ header nav ul li a:hover {
 footer {
   background-color: #01193c;
   width: 100%;
-  color: #fdb40b;
+  color: #fbc14e;
 }
 footer .content {
   display: flex;
