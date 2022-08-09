@@ -511,6 +511,29 @@ header.regular-width nav ul li a:hover {
   position: absolute;
   bottom: 20px;
 }
+@media screen and (max-width: 1100px) {
+  #package .cards.website {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media screen and (max-width: 850px) {
+  #package .cards.website {
+    grid-template-columns: repeat(1, auto);
+  }
+  #package .cards.branding {
+    grid-template-columns: repeat(1, auto);
+  }
+  #package .cards.seo {
+    grid-template-columns: repeat(1, auto);
+  }
+  #package .cards .card {
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  #package .cards .card:nth-child(even) {
+    box-shadow: 5px 5px 19px -3px rgba(0, 0, 0, 0.5058823529);
+  }
+}
 
 #contact h2 {
   text-align: center;

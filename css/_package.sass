@@ -61,4 +61,23 @@
                     position: absolute
                     bottom: 20px
 
+        @media screen and (max-width: 1100px)
+            &.website
+                grid-template-columns: repeat(2, 300px)
 
+        @media screen and (max-width: 850px)
+            &.website
+                grid-template-columns: repeat(1,auto)
+
+            &.branding
+                grid-template-columns: repeat(1,auto)
+
+            &.seo
+                grid-template-columns: repeat(1, auto)
+
+            .card
+                max-width: 300px
+                margin-top: 40px
+
+                &:nth-child(even)
+                    box-shadow: 5px 5px 19px -3px #00000081
