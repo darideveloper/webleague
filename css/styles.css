@@ -404,6 +404,22 @@ header.regular-width nav ul li a:hover {
 #what-you-gain li a:hover {
   color: #01193c;
 }
+@media screen and (max-width: 1000px) {
+  #what-you-gain ul {
+    padding: 0;
+  }
+  #what-you-gain ul li img {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  #what-you-gain ul {
+    padding-left: 40px;
+  }
+  #what-you-gain ul li img {
+    display: inline-block;
+  }
+}
 
 #testimonials h2 {
   text-align: center;
