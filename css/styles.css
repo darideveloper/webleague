@@ -50,7 +50,7 @@ a {
 @media screen and (max-width: 1200px) {
   .regular-width {
     margin: 0 50px;
-    width: 100%;
+    width: calc(100% - 100px);
   }
 }
 
@@ -182,6 +182,7 @@ header.regular-width nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
+    width: calc(100% - 200px);
   }
   header.regular-width button {
     display: inline-block;
@@ -516,7 +517,7 @@ header.regular-width nav ul li a:hover {
     grid-template-columns: repeat(2, 300px);
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   #package .cards.website {
     grid-template-columns: repeat(1, auto);
   }
@@ -602,8 +603,8 @@ header.regular-width nav ul li a:hover {
 
 footer {
   background-color: #01193c;
-  width: 100%;
   color: #fbc14e;
+  margin-top: 30px;
 }
 footer .content {
   display: flex;
@@ -639,6 +640,18 @@ footer .content .icons a img {
   margin: 0;
   padding: 0;
   margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+  footer .content {
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 500px) {
+  footer .content {
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
