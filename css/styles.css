@@ -125,6 +125,11 @@ main > section.regular-width {
   }
 }
 
+button.swal2-confirm.swal2-styled {
+  background-color: #94d9b3 !important;
+  border: none !important;
+}
+
 .btn {
   display: inline-block;
   transition-duration: 0.5s;
